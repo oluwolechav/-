@@ -1,0 +1,24 @@
+<div class="form-group col-lg-6">
+    <label for="exampleInputText">Total Price</label>
+    <input type="text" name="totalval"     class="form-control" id="totalval">
+</div>
+
+<div class="form-group col-lg-6">
+    <label for="exampleInputText">Initial Deposit</label>
+    <input type="text" name="inideposit" class="form-control" id="inideposit">
+</div>
+
+<div class="form-group col-lg-6">
+    <label for="exampleInputText">Outstanding Dues</label>
+    <input type="text" name="remainingval" class="form-control" id="remainingval" >
+</div>
+Here is my JavaScript code:
+
+<script type="text/javascript">
+
+    var total = parseInt(document.getElementById("totalval").value);
+    var val2 = parseInt(document.getElementById("inideposit").value);
+    var ansD = document.getElementById("remainingval");
+    ansD.value = total - val2;
+
+</script>
